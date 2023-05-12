@@ -642,7 +642,7 @@ border-color: var(--main-btn-color);
 .company-list {
 display: flex;
 flex-wrap: wrap;
-    justify-content: center;
+justify-content: center;
 margin-top: 72px;
 gap: 72px 16px;
 }
@@ -681,7 +681,6 @@ background-color: var(--second-color);
 }
 
 
-
 .footer-logo.link {
 display: flex;
 justify-content: center;
@@ -718,6 +717,7 @@ letter-spacing: 0.02em;
 color: var(--main-title-color);
 display: flex;
 justify-content: center;
+margin-top: 72px;
 }
 .footer-list{
 display: flex;
@@ -728,7 +728,7 @@ margin-top: 16px;
 .container-one{
 display: flex;
 flex-wrap: wrap;
-justify-content: center;
+
 }
 .footer-item{
 width: 40px;
@@ -775,6 +775,7 @@ justify-content: center;
     margin-top: 72px;
     display: flex;
     justify-content: center;
+    
 }
 
 .sub-modal-input::placeholder {
@@ -841,18 +842,24 @@ justify-content: center;
     fill: var(--main-title-color);
     padding-left: 16px;
 }
-
+@media screen and (min-width: 428px)and (max-width:767px)
+{
+.container-one{
+    justify-content: center;
+}
+}
 @media screen and (min-width: 768px) {
 .sub-modal-input{
     min-width: 264px;
 }
 .sub-text {
-    padding-left: auto;
+padding-left: auto;
+justify-content: start;
 }
 
 .footer-social{
    
-    margin-left: 24px;
+margin-left: 24px;
 }
 .footer-sub {
     display: flex;
@@ -860,26 +867,35 @@ justify-content: center;
   
 }
 .container-one{
-padding-left: 108px;
-
+    padding-left: 80px;
 }
 
 }
 @media screen and (min-width: 1158px) {
-    /* .footer {
+    .footer {
         padding-top: 100px;
         padding-bottom: 100px;
-        
+       
     }
-
+.footer-media{
+margin-top: 0;
+}
     .footer-social {
         margin-left: 120px;
+   
     }
 
     .footer-sub-container {
         margin-left: auto;
-    } */
-
+        
+    }
+.container-one{
+    padding-left: 15px;
+        padding-right: 15px;
+}
+.sub-text{
+margin-top: 0;
+}
 }
 
 
@@ -1085,6 +1101,7 @@ padding-left: 108px;
 }
 
 .modal {
+    
     position: absolute;
     top: 50%;
     left: 50%;
@@ -1309,10 +1326,10 @@ padding-left: 108px;
     display: flex;
     align-items: center;
     justify-content: center;
-
+    background-color: transparent;
     margin: 0;
     padding: 0;
-    background-color: transparent;
+    
     cursor: pointer;
     border: none;
     border-radius: 50%;
@@ -1433,5 +1450,8 @@ padding-left: 108px;
 }
 
 .menu-burger-icon {
-    stroke: #31d0aa;
+ stroke: var(--second-color);
+ border: none;
+
+
 }
