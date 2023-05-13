@@ -274,7 +274,7 @@ background-color: var(--second-color);
 text-align: center;
 background-image: 
 var(--bg-gradient) ,
-url(../images/hero-bg.jpg.jpg);
+url(../images/heromob1x.jpg);
 
 width: 428px;
 padding-top: 112px;
@@ -285,9 +285,49 @@ background-position: center;
 background-repeat: no-repeat;
 background-size: cover;
 }
+
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .hero {
+    background-image:
+            var(--bg-gradient),
+            url(../images/heromob@2x.jpg);
+    }}
+
+@media screen and (min-width: 428px){
+ .hero{
+background-image:
+        var(--bg-gradient),
+        url(../images/herotabl1x.jpg);
+ }  
+  @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+      .hero {
+          background-image:
+              var(--bg-gradient),
+              url(../images/herotabl@2x.jpg);
+      }
+  }
+}
+
 @media screen and (min-width: 768px){
 .hero {
-width: 768px;}
+width: 768px;
+background-image:
+        var(--bg-gradient),
+        url(../images/herodeskt1x.jpg);
+    }
+          @media (min-device-pixel-ratio: 2),
+          (min-resolution: 192dpi),
+          (min-resolution: 2dppx) {
+              .hero {
+                  background-image:
+                      var(--bg-gradient),
+                      url(../images/herodeskt@2x.jpg);
+              }
+          }
 }
 @media screen and (min-width: 1158px){
 .hero{ width: 1440px;
