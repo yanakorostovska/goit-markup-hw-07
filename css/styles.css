@@ -70,11 +70,12 @@ body{
     outline: 1px solid red;
 
  }
- 
+
+ @media screen and (min-width: 428px) {
      .container {
         width: 428px;
-        
      }
+ }
     
 
 @media screen and (min-width: 768px){
@@ -275,8 +276,6 @@ text-align: center;
 background-image: 
 var(--bg-gradient) ,
 url(../images/heromob1x.jpg);
-
-width: 428px;
 padding-top: 112px;
 padding-bottom: 112px;
 margin-left: auto;
@@ -285,7 +284,12 @@ background-position: center;
 background-repeat: no-repeat;
 background-size: cover;
 }
+@media screen and (min-width: 428px) {
+    .hero {
+width: 428px;
+    }
 
+}
 @media (min-device-pixel-ratio: 2),
 (min-resolution: 192dpi),
 (min-resolution: 2dppx) {
@@ -683,12 +687,12 @@ gap: 72px 16px;
 }
 
 
-
+@media screen and (min-width: 428px){
 .company-item {
  width: 190px;
  height: 88px;  
 
-}
+}}
 @media screen and (min-width: 768px){
 .company-list{
     gap: 72px 24px;
@@ -714,7 +718,14 @@ background-color: var(--second-color);
 
 
 }
-
+.footer-content{
+    margin-bottom: 72px;
+    
+}
+.footer-social{
+    margin-bottom: 72px;
+    
+}
 
 .footer-logo.link {
 display: flex;
@@ -752,7 +763,6 @@ letter-spacing: 0.02em;
 color: var(--main-title-color);
 display: flex;
 justify-content: center;
-margin-top: 72px;
 }
 .footer-list{
 display: flex;
@@ -806,8 +816,6 @@ justify-content: center;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--main-title-color);
-    
-    margin-top: 72px;
     display: flex;
     justify-content: center;
     
@@ -827,7 +835,7 @@ justify-content: center;
 
 .sub-modal-input {
     font-size: 12px;
-    min-width: 398px;
+    min-width: 290px;
     height: 40px;
     background-color: var(--second-color);
     border: 1px solid var(--main-title-color);
@@ -1139,7 +1147,7 @@ margin-top: 0;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
-    width: 408px;
+    width: 90%;
     background-color: var(--color-modal-bg);
     border-radius: 4px;
     padding-left: 24px;
@@ -1148,7 +1156,11 @@ margin-top: 0;
     padding-top: 72px;
     transition: transform var(--transition-dur-and-func)
 }
-
+@media screen and (min-width: 428px) {
+ .modal{
+    width: 408px;
+    }
+}
 .backdrop .is-hidden {
     visibility: hidden;
     opacity: 0;
@@ -1375,7 +1387,6 @@ margin-top: 0;
 .menu-close {
     margin-bottom: 32px;
     display: block;
-
 }
 
 @media (min-width: 768px) {
@@ -1422,6 +1433,7 @@ margin-top: 0;
     list-style: none;
     margin-bottom: auto;
     color: var(--second-color);
+  
 }
 
 .mobile-menu .link {
