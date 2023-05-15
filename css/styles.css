@@ -724,7 +724,7 @@ background-color: var(--second-color);
 }
 .footer-social{
     margin-bottom: 72px;
-    
+ 
 }
 
 .footer-logo.link {
@@ -773,6 +773,8 @@ margin-top: 16px;
 .container-one{
 display: flex;
 flex-wrap: wrap;
+justify-content: center;
+    
 
 }
 .footer-item{
@@ -911,6 +913,7 @@ margin-left: 24px;
 }
 .container-one{
     padding-left: 80px;
+    justify-content: flex-start;
 }
 
 }
@@ -1496,5 +1499,7 @@ margin-top: 0;
 
 .menu-burger-icon {
  stroke: var(--second-color);
- border: none;
+}
+.js-open-menu{
+    border: none;
 }
