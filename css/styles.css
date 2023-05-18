@@ -285,7 +285,7 @@ background-size: cover;
 }
 @media screen and (min-width: 428px) {
     .hero {
-width: 428px;
+max-width: 428px;
     }
 
 }
@@ -317,7 +317,7 @@ background-image:
 
 @media screen and (min-width: 768px){
 .hero {
-width: 768px;
+max-width: 768px;
 background-image:
         var(--bg-gradient),
         url(../images/herodeskt1x.jpg);
@@ -333,7 +333,8 @@ background-image:
           }
 }
 @media screen and (min-width: 1158px){
-.hero{ width: 1440px;
+.hero{ 
+    max-width: 1440px;
 padding-top: 188px;
  padding-bottom: 188px;
 }
@@ -934,9 +935,12 @@ margin-left: 24px;
 .footer-media{
 margin-top: 0;
 }
+.footer-content{
+    margin-bottom: 0;
+}
     .footer-social {
         margin-left: 120px;
-   
+   margin-bottom: 0;
     }
 
     .footer-sub-container {
@@ -995,16 +999,26 @@ margin-top: 0;
 
 .header-mail {
     font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;
+    font-size: 12px;
+    line-height: 1.1;
     letter-spacing: 0.02em;
     color: var(--address-color);
+}
+@media screen and (min-width: 1158px){
+.header-mail{
+font-size: 16px;
+line-height: 1.5;
+}
+.header-phone.link{
+font-size: 16px;
+    line-height: 1.5;
+}
 }
 
 .header-phone {
     font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;
+    font-size: 12px;
+    line-height: 1.1;
     letter-spacing: 0.02em;
     color: var(--address-color);
 }
@@ -1250,7 +1264,7 @@ margin-top: 0;
     left: 16px;
     top: 50%;
     transform: translateY(-50%);
-    color: var(--second-color);
+    fill: var(--second-color);
     transition: color var(--transition-dur-and-func);
 }
 
